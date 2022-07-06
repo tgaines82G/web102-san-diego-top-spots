@@ -1,0 +1,141 @@
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0px;
+            width: auto;
+            height: auto;
+            overflow: hidden;
+            background-color: #222;
+            color: #ffffff;
+        }
+        
+        .top-container {
+            display: inline-flexbox;
+            width: 100%;
+            justify-content: space-evenly;
+            align-items: center;
+            position: absolute;
+            overflow: hidden;
+            margin: 0;
+            height: auto;
+            box-shadow: 0px 5px 8px #000000;
+            background-image: url("Banner-San-diego-DMC-downtown.jpg");
+            background-size: cover;
+            background-position: 100%;
+        }
+        
+        img {
+            display: inline;
+            background-size: cover;
+            width: 100%;
+            height: 250px;
+        }
+        
+        .top-spot {
+            display: block;
+            position: fixed;
+            justify-content: space-evenly;
+            align-items: center;
+            color: #ffffff;
+            margin-top: 20px;
+            margin-left: 65%;
+            font-family: "splash", sans-serif;
+            font-size: 45px;
+            font-weight: bold;
+        }
+        
+        section {
+            display: block;
+            position: fixed;
+        }
+        
+        .mid-container {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            padding-top: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            margin-left: 120px;
+            margin-right: 120px;
+            margin-top: 150px;
+            width: 79%;
+            height: 160%;
+            align-items: center;
+        }
+        
+        .hotspot-table {
+            display: block;
+            margin-top: 0px;
+            margin-bottom: 55%;
+            border-collapse: collapse;
+            width: 100%;
+            height: 75%;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            overflow-y: scroll;
+            border-style: solid;
+            color: black;
+            background-color: #ffffff;
+            border: 1px solid black;
+        }
+        
+        .table-header {
+            position: sticky;
+            margin-top: auto;
+            width: auto;
+        }
+        
+        .thead-dark {
+            background-color: #000000;
+            color: #ffffff;
+            width: auto;
+        }
+        
+        td {
+            width: fit-content;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        
+        th {
+            padding-left: 10px;
+        }
+        
+        tr:hover {
+            background-color: lightcoral;
+            cursor: pointer;
+            border: solid;
+            color: black;
+        }
+        
+        #name {
+            font-weight: bold;
+        }
+        
+        #gmap {
+            position: fixed;
+            margin-right: 180%;
+            margin-bottom: 0%;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        
+        @media screen and (max-width: 1980px) {
+            .hotspot-table {
+                margin-top: 10px;
+            }
+        }
+        
+        @media screen and (max-height: 1020px) {
+            .scroll {
+                float: none;
+                display: block;
+                margin-top: 295px;
+            }
+        }
